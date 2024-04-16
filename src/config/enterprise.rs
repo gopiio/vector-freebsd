@@ -31,7 +31,6 @@ use crate::{
         util::{http::RequestConfig, retries::ExponentialBackoff},
     },
     sources::{
-        host_metrics::{Collector, HostMetricsConfig},
         internal_logs::InternalLogsConfig,
         internal_metrics::InternalMetricsConfig,
     },
