@@ -543,7 +543,6 @@ sources-metrics = [
   "sources-apache_metrics",
   "sources-aws_ecs_metrics",
   "sources-eventstoredb_metrics",
-  "sources-host_metrics",
   "sources-internal_metrics",
   "sources-mongodb_metrics",
   "sources-nginx_metrics",
