@@ -344,13 +344,13 @@ warp = { version = "0.3.6", default-features = false }
 zstd = { version = "0.13.0", default-features = false }
 arr_macro = { version = "0.2.1" }
 
+# make sure to update the external docs when the Lua version changes
+mlua = { version = "0.9.6", default-features = false, features = ["lua54", "send", "vendored", "macros"], optional = true }
+
 # depending on fork for bumped nix dependency
 # https://github.com/heim-rs/heim/pull/360
 [target.'cfg(not(target_os = "freebsd"))'.dependencies]
 heim = { git = "https://github.com/vectordotdev/heim.git", branch = "update-nix", default-features = false, features = ["disk"] }
-
-# make sure to update the external docs when the Lua version changes
-mlua = { version = "0.9.6", default-features = false, features = ["lua54", "send", "vendored", "macros"], optional = true }
 
 [target.'cfg(windows)'.dependencies]
 windows-service = "0.6.0"
