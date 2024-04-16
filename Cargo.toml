@@ -414,6 +414,7 @@ default-musl = ["api", "api-client", "enrichment-tables", "rdkafka?/cmake_build"
 default-no-api-client = ["api", "enrichment-tables", "sinks", "sources", "sources-dnstap", "transforms", "unix", "rdkafka?/gssapi-vendored", "enterprise"]
 default-no-vrl-cli = ["api", "sinks", "sources", "sources-dnstap", "transforms", "unix", "rdkafka?/gssapi-vendored", "enterprise"]
 tokio-console = ["dep:console-subscriber", "tokio/tracing"]
+default-freebsd = ["api", "api-client", "enrichment-tables", "sinks", "sources-freebsd", "sources-dnstap", "transforms", "unix", "rdkafka?/gssapi-vendored"]
 
 # Enables the binary secret-backend-example
 secret-backend-example = ["transforms"]
